@@ -1,4 +1,4 @@
-# tunnels
+# node-tunnels
 
 A simple npm module and binary to terminate and forward SSL connections.
 
