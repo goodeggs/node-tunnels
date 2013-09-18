@@ -2,7 +2,7 @@
 
 A simple npm module and binary to terminate and forward SSL connections.
 
-NOTE: This is intended to be used to make local web development easier, not to be run in production.
+This is intended to be used to make local web development easier, not to be run in production.  tunnels was inspired by https://github.com/jugyo/tunnels
 
 ## Install
 
