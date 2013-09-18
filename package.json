@@ -1,6 +1,6 @@
 {
   "name": "tunnels",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple SSL terminator written in NodeJS.",
   "homepage": "http://goodeggs.github.com/tunnels/",
   "dependencies": {
@@ -8,6 +8,9 @@
   },
   "devDependencies": {
     "coffee-script": "*"
+  },
+  "bin": {
+    "tunnels": "./bin/tunnels"
   },
   "scripts": {
     "test": "./node_modules/.bin/coffee -c -o lib src"
