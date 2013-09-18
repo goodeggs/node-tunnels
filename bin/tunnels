@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+
+var path = require('path');
+var fs   = require('fs');
+var lib  = path.join(path.dirname(fs.realpathSync(__filename)), '../lib');
+
+var server = require(lib + '/tunnels')({
+  path: path.join(process.env.HOME, '.tunnels'),
+  forwardPort: 80
+});
+
+server.listen(443, function(err) {
+  if (err) throw err;
+  console.log('127.0.0.1:443 --(--)--> 127.0.0.1:80');
+});
+
+process.on('SIGINT', process.exit);
+process.on('SIGTERM', process.exit);
+

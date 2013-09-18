@@ -1,0 +1,16 @@
+{
+  "name": "tunnels",
+  "version": "0.0.1",
+  "description": "A simple SSL terminator written in NodeJS.",
+  "homepage": "http://goodeggs.github.com/tunnels/",
+  "dependencies": {
+    "http-proxy": "*"
+  },
+  "devDependencies": {
+    "coffee-script": "*"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/coffee -c -o lib src"
+  }
+}
+
